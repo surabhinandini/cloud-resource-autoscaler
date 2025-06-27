@@ -1,0 +1,161 @@
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container h2 {
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.form-container form div {
+  margin-bottom: 1rem;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  box-sizing: border-box;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 0.75rem;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.prediction-result {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.error-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #d9534f; /* Bootstrap red */
+  font-weight: 600;
+}
+
+.dataset-section {
+  margin-top: 2.5rem;
+  overflow-x: auto;
+}
+
+.dataset-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  min-width: 720px; /* Ensure table can show all columns */
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: #444;
+}
+
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.dataset-section > button {
+  margin: 0 0.5rem 1rem 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dataset-section > button:hover:not([disabled]) {
+  background-color: #0056b3;
+}
+
+/* Styles for Download CSV button inside link */
+.download-button a button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto; /* Do not stretch full width */
+}
+
+.download-button a button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive: smaller devices */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 95%;
+    padding: 1rem 1.25rem;
+  }
+
+  table {
+    min-width: 600px;
+    font-size: 0.9rem;
+  }
+}

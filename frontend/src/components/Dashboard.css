@@ -1,0 +1,53 @@
+.dashboard-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6); /* dim the video so text is readable */
+}
+
+.dashboard-content {
+  position: center;
+  max-width: 900px;
+  margin: auto;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black bg for text readability */
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: white;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,134 @@
+/* Fixed navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.logo-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #00ffd5;
+}
+
+/* Padding to push content below fixed navbar */
+.landing-container {
+  padding-top: 80px;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Hero section */
+.hero-text {
+  text-align: center;
+  color: white;
+  padding: 3rem 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+/* Features */
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  min-width: 220px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  z-index: 1;
+  position: relative;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,73 @@
+/* Background of entire contact page */
+body {
+  background-color: #4b0082; /* Indigo purple */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Contact form box styling */
+.contact-container {
+  color: white;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional translucent box */
+  border-radius: 12px;
+}
+
+/* Contact form fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff69b4; /* Hot pink button on purple bg */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-status {
+  margin-bottom: 1rem;
+  color: #00ff99;
+}
+
+.contact-status.error {
+  color: #ff4d4d;
+}
+
+/* Footer styles */
+.contact-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+.contact-footer a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}

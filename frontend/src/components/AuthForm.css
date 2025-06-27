@@ -1,0 +1,89 @@
+.auth-bg {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.auth-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 1000px;
+  z-index: 2;
+}
+
+.cuboid {
+  width: 350px;
+  height: 480px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.cuboid.flip {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+input, button {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: #00ffd5;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #00ccaa;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #00ffd5;
+  text-decoration: underline;
+  cursor: pointer;
+}
