@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node/React
+frontend/node_modules/
+
+# Datasets (keep large files out of Git)
+backend/datasets/
+datasets/
+*.csv
+*.parquet
+*.json
+
+# Misc
+*.jar
+.DS_Store
